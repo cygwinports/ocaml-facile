@@ -1,0 +1,29 @@
+ORIG_PN="facile"
+
+inherit ocaml
+
+DESCRIPTION="OCaml Functional Constraint Library"
+HOMEPAGE="http://www.recherche.enac.fr/opti/facile/"
+SRC_URI="http://www.recherche.enac.fr/opti/facile/distrib/${ORIG_PN}-${PV}.tar.gz"
+
+MAKEOPTS+=' -j1'
+
+src_compile() {
+	lndirs
+	cd ${B}
+	rm -f config_Makefile
+	./configure || error "configure failed"
+	cygmake
+}
+
+src_test() {
+	cd ${B}
+	cygmake check
+}
+
+src_install() {
+	cd ${B}
+	insinto ${OCAML_LIBDIR}/${ORIG_PN}
+	cyginstall FACILEDIR=${D}${OCAML_LIBDIR}/${ORIG_PN}
+	doins src/facile.mli
+}
