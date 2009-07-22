@@ -1,4 +1,4 @@
-category: Interpreters
+category: OCaml
 requires: ocaml
 sdesc: "OCaml Functional Constraint Library"
 ldesc: "FaCiLe is a constraint programming library on integer and 

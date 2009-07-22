@@ -26,4 +26,11 @@ src_install() {
 	insinto ${OCAML_LIBDIR}/${ORIG_PN}
 	cyginstall FACILEDIR=${D}${OCAML_LIBDIR}/${ORIG_PN}
 	doins src/facile.mli
+
+	cat > ${D}${OCAML_LIBDIR}/facile/META <<-_EOF
+		version="${PV}"
+		directory="+facile"
+		archive(byte) = "facile.cma"
+		archive(native) = "facile.cmxa"
+	_EOF
 }

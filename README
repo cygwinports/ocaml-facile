@@ -8,15 +8,16 @@ and constraints (possibly non-linear), built-in global constraints
 goals.
 
 Runtime requirements:
-  ocaml-3.10.2-1
+  ocaml-3.11.1-1
 
 Build requirements:
-  cygwin-1.5.25-11
-  binutils-20060817-1
-  cygport-0.3.9-1
-  gcc-core-3.4.4-3
-  make-3.81-1
-  ocaml-3.10.2-1
+  cygwin-1.7.0-51
+  binutils-2.19.51-1
+  cygport-0.9.8-1
+  flexdll-0.19.169-1
+  gcc4-core-4.3.2-2
+  make-3.81-2
+  ocaml-3.11.1-1
 
 Canonical website:
   http://www.recherche.enac.fr/opti/facile/
@@ -41,30 +42,21 @@ This will create:
 
 Files included in the binary package:
 
+  /usr/lib/ocaml/3.10/facile/META
   /usr/lib/ocaml/3.10/facile/facile.a
   /usr/lib/ocaml/3.10/facile/facile.cma
   /usr/lib/ocaml/3.10/facile/facile.cmi
   /usr/lib/ocaml/3.10/facile/facile.cmxa
   /usr/lib/ocaml/3.10/facile/facile.mli
-  /usr/share/doc/Cygwin/ocaml-facile-1.1.README
-  /usr/share/doc/ocaml-facile-1.1/LICENSE
-  /usr/share/doc/ocaml-facile-1.1/README
+  /usr/share/doc/ocaml-facile/LICENSE
+  /usr/share/doc/ocaml-facile/README
 
 ------------------
 
 Port Notes:
 
------ version 1.1-4 -----
-Rebuilt with ocaml-3.10.2.
-
------ version 1.1-3 -----
-Rebuilt with ocaml-3.10.
-
------ version 1.1-2 -----
-Rebuilt with ocaml-3.09.
-
------ version 1.1-1 -----
-Initial release for Cygwin.
+----- version 1.1-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
