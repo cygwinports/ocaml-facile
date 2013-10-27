@@ -1,9 +1,0 @@
-category: OCaml
-requires: ocaml-base
-sdesc: "OCaml Functional Constraint Library"
-ldesc: "FaCiLe is a constraint programming library on integer and 
-integer set finite domains written in OCaml. It offers all usual 
-facilities to create and manipulate finite domain variables, arithmetic 
-expressions and constraints (possibly non-linear), built-in global 
-constraints (difference, cardinality, sorting etc.) and search and 
-optimization goals."
