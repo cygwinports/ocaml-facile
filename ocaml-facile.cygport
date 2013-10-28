@@ -2,7 +2,7 @@ inherit ocaml
 
 NAME="ocaml-facile"
 VERSION=1.1
-RELEASE=13
+RELEASE=14
 CATEGORY="Libs"
 SUMMARY="OCaml Functional Constraint Library"
 DESCRIPTION="FaCiLe is a constraint programming library on integer and
@@ -13,6 +13,7 @@ cardinality, sorting etc.) and search and optimization goals."
 HOMEPAGE="http://www.recherche.enac.fr/opti/facile/"
 SRC_URI="http://www.recherche.enac.fr/opti/facile/distrib/facile-${VERSION}.tar.gz"
 SRC_DIR="facile-${VERSION}"
+PATCH_URI="http://pkgs.fedoraproject.org/cgit/ocaml-facile.git/plain/ocaml-facile-ocaml-4.patch"
 
 MAKEOPTS+=' -j1'
 
