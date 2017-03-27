@@ -1,8 +1,8 @@
 inherit ocaml
 
 NAME="ocaml-facile"
-VERSION=1.1
-RELEASE=14
+VERSION=1.1.3
+RELEASE=1
 CATEGORY="Libs"
 SUMMARY="OCaml Functional Constraint Library"
 DESCRIPTION="FaCiLe is a constraint programming library on integer and
@@ -10,10 +10,11 @@ integer-set finite domains written in OCaml. It offers all usual facilities
 to create and manipulate finite domain variables, arithmetic expressions and
 constraints (possibly non-linear), built-in global constraints (difference,
 cardinality, sorting etc.) and search and optimization goals."
-HOMEPAGE="http://www.recherche.enac.fr/opti/facile/"
-SRC_URI="http://www.recherche.enac.fr/opti/facile/distrib/facile-${VERSION}.tar.gz"
+HOMEPAGE="http://opti.recherche.enac.fr/facile/"
+SRC_URI="http://opti.recherche.enac.fr/facile/distrib/facile-${VERSION}.tar.gz"
 SRC_DIR="facile-${VERSION}"
-PATCH_URI="http://pkgs.fedoraproject.org/cgit/ocaml-facile.git/plain/ocaml-facile-ocaml-4.patch"
+
+REQUIRES="ocaml"
 
 MAKEOPTS+=' -j1'
 
