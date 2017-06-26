@@ -2,7 +2,7 @@ inherit ocaml
 
 NAME="ocaml-facile"
 VERSION=1.1.3
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="OCaml Functional Constraint Library"
 DESCRIPTION="FaCiLe is a constraint programming library on integer and
